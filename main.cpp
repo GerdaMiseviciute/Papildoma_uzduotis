@@ -108,7 +108,7 @@ int main()
     int eilutes_sk=1;
     while(getline(fd, eilute))
     {
-        if(eilute.back()=='.')
+        if(!eilute.empty() && eilute.back()=='.')
             eilute.pop_back();
         istringstream zodziai(eilute);
         string zodis;
